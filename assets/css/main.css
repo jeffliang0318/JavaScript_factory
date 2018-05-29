@@ -1405,3 +1405,10 @@
 			}
 
 		}
+		.upper{
+			height:60%;
+			overflow: hidden;
+		}
+		.upper-img{
+			height: 100%;
+		}
