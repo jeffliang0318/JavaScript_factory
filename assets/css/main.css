@@ -1418,7 +1418,7 @@
 			background-size: cover;
 		}
 		.project-img{
-			width: 100%;
+			/* width: 100%; */
 		}
 		.top-icon{
 			border: none;
