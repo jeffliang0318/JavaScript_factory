@@ -1417,3 +1417,6 @@
 			background-position: center;
 			background-size: cover;
 		}
+		.project-img{
+			image-orientation: center;	
+		}
