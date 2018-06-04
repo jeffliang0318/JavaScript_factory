@@ -1410,7 +1410,7 @@
 			overflow: hidden;
 		}
 		.upper-img{
-			height: 100%;
+			width: 100%;
 		}
 		.drum{
 			background-image: url(https://res.cloudinary.com/dgxmjwbrc/image/upload/c_scale,w_500/v1527285597/matthijs-smit-579209-unsplash.jpg);
@@ -1418,7 +1418,7 @@
 			background-size: cover;
 		}
 		.project-img{
-			image-orientation: center;
+			width: 100%;
 		}
 		.top-icon{
 			border: none;
