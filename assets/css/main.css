@@ -1166,7 +1166,7 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
-		min-height: 70vh;
+		min-height: 50vh;
 		background-image: url("../../images/banner1.jpg");
 		background-position: center;
 		background-size: cover;
