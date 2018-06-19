@@ -1,0 +1,66 @@
+.title {
+  text-align: center;
+}
+.builder {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.link {
+  margin-left: 5px;
+}
+.rule {
+  text-align: center;
+  font-size: 20px;
+}
+.game{
+  width: 600px;
+  height: 600px;
+  background-image:url(./img/last.png);
+  background-size: cover;
+  margin: auto;
+  overflow: hidden;
+}
+.element {
+  height: 14%;
+  width: 14%;
+  background-size: cover;
+  display: inline-block;
+}
+.last {
+  background-image: url(./img/last.png);
+}
+.empty {
+  background-image: url(./img/white.png);
+}
+.red {
+  background-image: url(./img/red.png);
+}
+.yellow {
+  background-image: url(./img/yellow.png);
+}
+.pointer {
+  background-image: url(./img/pointer.png);
+}
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current {
+  height: 100%;
+  width: 15%;
+  background-size: cover;
+  display: inline-block;
+}
+#currentPlayer {
+  height: 30px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.winner {
+  text-align: center;
+}

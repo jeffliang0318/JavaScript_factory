@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ConnectFour</title>
+    <link rel="stylesheet" type="text/css" href="connectFour.css">
+  </head>
+  <body>
+    <div class="title">
+      <h1>Connect Four</h1>
+      <div class="builder">
+        <h2>Built by </h2>
+        <a class='link' href="http://www.jeffliang.us">Jeff Liang</a>
+      </div>
+    </div>
+    <div class="rule">
+      <p>Use left and right key to move pointer to select which column you are going to drop the disk, press space bar to drop.</p>
+    </div>
+  <div class="game" id='game'>
+  </div>
+  <div class="player" id='player'>
+    <h2>Current player: </h2>
+    <div id="currentPlayer">
+    </div>
+  </div>
+  <div class="winner" id='winner'>
+  </div>
+  <script src='connectFour.js'>
+  </script>
+  <script src='checkWinner.js'>
+  </script>
+  <script src='dropLogic.js'>
+  </script>
+  </body>
+</html>
