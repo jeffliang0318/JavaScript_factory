@@ -14,18 +14,35 @@
     <label for="blur">Blur:</label>
     <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
 
+    <label for="opacity">Opacity:</label>
+    <input id="opacity" type="range" name="opacity" min="0" max="10" value="10">
+
     <label for="base">Base Color</label>
-    <input id="base" type="color" name="base" value="#ffc600">
+    <input id="base" type="color" name="base" value="#orange">
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <img src="http://res.cloudinary.com/dgxmjwbrc/image/upload/c_fill,h_500,w_500/v1528156661/blur.jpg">
 
   <style>
 
     /*
       misc styles, nothing to do with CSS variables
     */
-
+    :root {
+      --spacing: 10px;
+      --base: orange;
+      --blur: 10px;
+      --opacity: 1;
+    }
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+      opacity: var(--opacity);
+    }
+    .hl {
+      color: var(--base)
+    }
     body {
       text-align: center;
       background: #193549;
@@ -45,6 +62,20 @@
   </style>
 
   <script>
+
+    const inputs = document.querySelectorAll(".controls input");
+
+    function handleUpdate(){
+      const suffix = this.dataset.sizing || '';
+      let updateValue = this.value;
+      if (this.name === "opacity") updateValue /= 10;
+      console.log(updateValue);
+      console.log(this.name);
+      document.documentElement.style.setProperty(`--${this.name}`, updateValue + suffix)
+    }
+
+    inputs.forEach( input => input.addEventListener("change", handleUpdate))
+    inputs.forEach( input => input.addEventListener("mousemove", handleUpdate))
   </script>
 
 </body>
