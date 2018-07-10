@@ -1,3 +1,3 @@
 # JavaScript_factory
-For Javascript 30 practice
+Using [IEX API](https://iextrading.com/developer/docs/#getting-started)
 [Live](https://jeffliang0318.github.io/JavaScript_factory/)
