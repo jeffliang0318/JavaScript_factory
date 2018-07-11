@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Daily update Stock Barchart</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 class='white title'>Sort by MarketCap</h1>
+    <section class="BarChart">
+      <ul id='bar'>
+      </ul>
+    </section>
+    <section class="table">
+      <table>
+        <tr>
+          <th class="tableHead">Start</th>
+          <th class="tableHead">Value</th>
+        </tr>
+        <tr>
+          <td>Number Selected</td>
+          <td id='numberSelected'>0</td>
+        </tr>
+        <tr>
+          <td>Total Price</td>
+          <td id='totalPrice'>$0</td>
+        </tr>
+        <tr>
+          <td>Average Price</td>
+          <td id='averagePrice'>$0</td>
+        </tr>
+        <tr>
+          <td>Stock with Highest Price</td>
+          <td id='highestPrice'>Select any company</td>
+        </tr>
+      </table>
+    </section>
+    <script src='barChart.js'>
+    </script>
+    <script src='table.js'>
+    </script>
+  </body>
+</html>

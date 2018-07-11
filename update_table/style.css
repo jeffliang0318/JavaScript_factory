@@ -1,0 +1,130 @@
+ul {
+  padding: 0;
+}
+table {
+    width:50%;
+    margin: auto;
+}
+html {
+  height: 100%;
+  background-image: url(http://res.cloudinary.com/dgxmjwbrc/image/upload/v1531257633/stock_bg.jpg);
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    width: 50%;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: white;
+}
+table tr:nth-child(odd) {
+   background-color: lightgrey;
+}
+table th {
+    background-color: darkgrey;
+}
+
+.BarChart {
+  width: 60%;
+  margin: auto;
+  background-color: rgb(160,160,160, 90%);
+}
+.companyInfo {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  height: 5vh;
+}
+.nameAndBar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.marketBar {
+  height: 1.5vh;
+  background-color: #009933;
+  position: relative;
+}
+
+.marketBar:hover .priceInfo{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.companyName {
+  font-size: 1em;
+  width: 25%;
+  text-align: right;
+  border-right: 2px solid black;
+  color: white;
+}
+
+.priceInfo {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 2px;
+  position: absolute;
+  left: calc(100% + 10px);
+  top: -100%;
+  width: 220px;
+  text-align: center;
+  display: none;
+  background-color: white;
+}
+
+.priceInfo::before {
+  content: "";
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 14px solid black;
+  position: absolute;
+  height: 0;
+  bottom: 18px;
+  width: 0px;
+  left: -6%;
+}
+
+.priceInfo::after {
+  content: "";
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 14px solid white;
+  position: absolute;
+  height: 0;
+  bottom: 18px;
+  width: 0px;
+  left: -5.5%;
+}
+
+.priceInfo p {
+  margin: 0;
+}
+
+.tableHead {
+  position: relative;
+  padding-left: 30px;
+}
+.tableHead::before {
+  content: "";
+  border-style: solid;
+  border-width: 10px 7px 0;
+  border-color: black transparent transparent;
+  transform: translateX(-50%);
+  position: absolute;
+  height: 0;
+  bottom: 17px;
+  width: 0;
+  left: 18px;
+}
+.white {
+  color: white;
+}
+
+.title {
+  text-align: center;
+}
