@@ -29,7 +29,7 @@ const updateMax = function() {
   return mostValueCompany;
 }
 const updateTable = function() {
-  let number = 0, total = 0, average = 0;
+  let number = 0, total = 0.00, average = 0.00;
   let highestCompany;
   for (let i = 0; i < companyCheckBoxes.length; i++){
     let company = companyCheckBoxes[i].id;
@@ -39,7 +39,7 @@ const updateTable = function() {
       if (this.checked) {
         number++;
         total += price;
-        total = parseFloat(Math.round(total * 100) / 100).toFixed(2);
+        // total = parseFloat(Math.round(total * 100) / 100).toFixed(2);
         highestCompany = updateMax();
       } else {
         number--;
@@ -47,7 +47,7 @@ const updateTable = function() {
         total = parseFloat(Math.round(total * 100) / 100).toFixed(2);
         highestCompany = updateMax();
       }
-      average = total <= 0 ? 0 : parseFloat(Math.round((total / number) * 100) / 100).toFixed(2);
+      average = Math.floor(total) <= 0.001 ? 0 : parseFloat(Math.round((total / number) * 100) / 100).toFixed(2);
       highestCompany = highestCompany === undefined ? "Select any company" : highestCompany;
 
       numberSelected.innerHTML = number;
