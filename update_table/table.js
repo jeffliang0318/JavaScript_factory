@@ -39,10 +39,12 @@ const updateTable = function() {
       if (this.checked) {
         number++;
         total += price;
+        total = parseFloat(Math.round(total * 100) / 100).toFixed(2);
         highestCompany = updateMax();
       } else {
         number--;
         total -= price;
+        total = parseFloat(Math.round(total * 100) / 100).toFixed(2);
         highestCompany = updateMax();
       }
       average = total <= 0 ? 0 : parseFloat(Math.round((total / number) * 100) / 100).toFixed(2);
