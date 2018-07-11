@@ -8,6 +8,7 @@ table {
 html {
   height: 100%;
   background-image: url(http://res.cloudinary.com/dgxmjwbrc/image/upload/v1531257633/stock_bg.jpg);
+  background-size: cover;
 }
 table, th, td {
     border: 1px solid black;
@@ -127,4 +128,7 @@ table th {
 
 .title {
   text-align: center;
+}
+.orange {
+  color: orange;
 }
