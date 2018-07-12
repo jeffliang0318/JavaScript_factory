@@ -29,22 +29,21 @@ const updateMax = function() {
   return mostValueCompany;
 }
 const updateTable = function() {
-  let number = 0, total = 0.00, average = 0.00;
+  let number = 0, total = 0, average = 0.;
   let highestCompany;
   for (let i = 0; i < companyCheckBoxes.length; i++){
     let company = companyCheckBoxes[i].id;
     let price = companies[company].price;
-
+    price = parseFloat(price.toFixed(2));
+    console.log(typeof(price));
     companyCheckBoxes[i].addEventListener('change', function() {
       if (this.checked) {
         number++;
-        total += price;
-        // total = parseFloat(Math.round(total * 100) / 100).toFixed(2);
+        total = parseFloat((total + price).toFixed(2));
         highestCompany = updateMax();
       } else {
         number--;
-        total -= price;
-        total = parseFloat(Math.round(total * 100) / 100).toFixed(2);
+        total = parseFloat((total - price).toFixed(2));
         highestCompany = updateMax();
       }
       average = Math.floor(total) <= 0.001 ? 0 : parseFloat(Math.round((total / number) * 100) / 100).toFixed(2);
