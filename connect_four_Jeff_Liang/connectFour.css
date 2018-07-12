@@ -64,3 +64,9 @@
 .winner {
   text-align: center;
 }
+
+html {
+  background-image: url(http://res.cloudinary.com/dgxmjwbrc/image/upload/v1531427059/Appalachian1-e1502376240683.jpg);
+  background-size: cover;
+  height: 100%;
+}
